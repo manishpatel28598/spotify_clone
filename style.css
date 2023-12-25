@@ -5,18 +5,18 @@
 }
 .container {
   background-color: #000000;
-  width: 100vw;
+  width: 100%;
   height: fit-content;
   display: flex;
 }
 .side_bar {
-  flex: 2;
-  border: 2px solid red;
+  width: 20vw;
+  border: none;
 }
 .main_container {
   background-color: #202020;
-  flex: 10;
-  border: 2px solid red;
+  width: 80vw;
+  border: none;
 }
 .logo img {
   width: 164px;
@@ -186,7 +186,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin:20px;
+  margin: 20px;
 }
 .headign_and_para h2 {
   color: #fff;
@@ -206,7 +206,7 @@ h1 {
   margin: 20px;
   width: 231px;
   height: 290px;
-  padding-top: 15px;
+  padding: 15px;
   background: #181818;
   display: flex;
   flex-direction: column;
@@ -218,25 +218,90 @@ h1 {
   height: 180px;
   border-radius: 14px;
   background: linear-gradient(
-    180deg,
+      180deg,
       rgba(0, 0, 0, 0.65) 0%,
       rgba(0, 0, 0, 0.23) 26.44%
-      ),
-      url(<path-to-image>), lightgray 50% / cover no-repeat;
-    }
-    .cards h2 {
-      color: #fff;
-      font-size: 21px;
-      font-weight: 500;
-      letter-spacing: -0.42px;
-    }
-    .cards p {
-      color: #b3b3b3;
-      font-size: 15px;
-      font-weight: 500;
-      letter-spacing: 0.15px;
-    }
-    .shows_might_you_like {
-      margin: 20px;
-    }
-    
+    ),
+    url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+.cards h2 {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: -0.42px;
+}
+.cards p {
+  color: #b3b3b3;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.15px;
+}
+.shows_might_you_like {
+  margin: auto;
+  display: flex;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+.show_might_you_like::-webkit-scrollbar{
+  display:none;
+  scrollbar-width: none;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #181818;
+  height: 112px;
+  margin-top: -10px;
+  box-shadow:0px -10px 10px #adc8dc;
+  position:sticky;
+  bottom: 0px;
+}
+#song_details {
+  display: flex;
+  margin: 10px;
+  color: white;
+  margin: 10px;
+  align-items: center;
+  gap: 50px;
+}
+#control {
+
+}
+#buttons{
+  display:flex;
+  justify-content: center;
+  padding: 0px 10px 0px 10px;
+  
+}
+#graph {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+#graph > p {
+  padding: 0px 10px 0px 10px;
+}
+#rec_graph {
+  width: 253px;
+  height: 2px;
+  background-color: white;
+}
+#rec_graph2 {
+  width: 256px;
+  height: 2px;
+  background-color: grey;
+}
+#volume_bar {
+  width: 116px;
+  height: 5px;
+  border-radius: 2.5px;
+  background: #c4c4c4;
+}
+.common_details{
+  display:flex;
+  align-items: center;
+  gap:10px;
+  margin:10px;
+}
